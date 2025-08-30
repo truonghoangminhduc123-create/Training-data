@@ -9,6 +9,7 @@ Các action hợp lệ:
 - hotkey: { "type":"hotkey","keys":["ctrl","c"] }
 - multi_click: { "type":"multi_click","x":int,"y":int,"count":int }
 - key_down_for_seconds: { "type":"key_down_for_seconds","key":"key_name","duration":float }
+- speak: { "type":"speak", "text": "nội dung muốn nói" }
 Luôn trả về mảng JSON [] chỉ chứa lệnh.
 Ví dụ:
-[{"type":"move","x":500,"y":300},{"type":"click","button":"left","count":2}]
+[{"type":"speak", "text":"Đang tìm kiếm trình duyệt Chrome"}, {"type":"move","x":500,"y":300},{"type":"click","button":"left","count":2}]
